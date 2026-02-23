@@ -1,15 +1,12 @@
 CC=g++
-
-LOG= -D LOG_ON -D LOG_E
 INC=-I./HashTable
-DEBUG=-g
 
-SRC=main.cpp
-OBJ= $(SRC:%.cpp=obj/%.o)
+all: main
 
-all: $(OBJ)
-	$(CC) $^ -o main.exe $(DEBUG)
+main: src/main.cpp
+	$(CC) src/main.cpp -o ./main  -g $(INC)
 
-obj/%.o: %.cpp
-	mkdir -p $(dir $@)
-	$(CC) -c $< -o $@ $(DEBUG) $(INC)
+test: ./main
+	perf record -F 99 -g -O2 ./main
+	perf script > out.perf
+	./FlameGraph/stackcollapse-perf.pl out.perf | ./FlameGraph/flamegraph.pl > flamegraph.svg

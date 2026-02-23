@@ -1,0 +1,35 @@
+main   27191 35187.442766:    5050505 cycles:Pu: 
+	    556d275d9b4d HashTable<unsigned long>::get(unsigned long)+0x9 (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+	    556d275d95b7 main+0xee (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+	    7f5eba227635 [unknown] (/usr/lib/libc.so.6)
+	    7f5eba2276e9 __libc_start_main+0x89 (/usr/lib/libc.so.6)
+	    556d275d9125 _start+0x25 (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+
+main   27191 35187.447333:    7806501 cycles:Pu: 
+	    7f5eba2a6ad3 [unknown] (/usr/lib/libc.so.6)
+	    7f5eba6b26c5 operator new(unsigned long)+0x25 (/usr/lib/libstdc++.so.6.0.34)
+	    556d275dc8d6 std::__new_allocator<std::_List_node<HashTable<unsigned long>::Node> >::allocate(unsigned long, void const*)+0x64 (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+	    556d275dc40b std::__allocated_ptr<std::allocator<std::_List_node<HashTable<unsigned long>::Node> > > std::__allocate_guarded<std::allocator<std::_List_node<HashTable<unsigned long>::Node> > >(std::allocator<std::_List_node<HashTable<unsigned long>::Node> >&)+0x38 (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+	    556d275dc0d9 std::__allocated_obj<std::allocator<std::_List_node<HashTable<unsigned long>::Node> > > std::__allocate_guarded_obj<std::allocator<std::_List_node<HashTable<unsigned long>::Node> > >(std::allocator<std::_List_node<HashTable<unsigned long>::Node> >&)+0x33 (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+	    556d275db8ef std::_List_node<HashTable<unsigned long>::Node>* std::__cxx11::list<HashTable<unsigned long>::Node, std::allocator<HashTable<unsigned long>::Node> >::_M_create_node<HashTable<unsigned long>::Node>(HashTable<unsigned long>::Node&&)+0x4f (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+	    556d275db321 void std::__cxx11::list<HashTable<unsigned long>::Node, std::allocator<HashTable<unsigned long>::Node> >::_M_insert<HashTable<unsigned long>::Node>(std::_List_iterator<HashTable<unsigned long>::Node>, HashTable<unsigned long>::Node&&)+0x2f (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+	    556d275da7d8 std::__cxx11::list<HashTable<unsigned long>::Node, std::allocator<HashTable<unsigned long>::Node> >::push_back(HashTable<unsigned long>::Node&&)+0x3e (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+	    556d275d9b15 HashTable<unsigned long>::insert(unsigned long, unsigned long const&)+0x195 (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+	    556d275d9589 main+0xc0 (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+	    7f5eba227635 [unknown] (/usr/lib/libc.so.6)
+	    7f5eba2276e9 __libc_start_main+0x89 (/usr/lib/libc.so.6)
+	    556d275d9125 _start+0x25 (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+
+main   27191 35187.454166:   11673692 cycles:Pu: 
+	    7f5eba2a4da1 [unknown] (/usr/lib/libc.so.6)
+	    556d275dc6e4 std::__new_allocator<std::_List_node<HashTable<unsigned long>::Node> >::deallocate(std::_List_node<HashTable<unsigned long>::Node>*, unsigned long)+0x2e (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+	    556d275dc229 std::__cxx11::_List_base<HashTable<unsigned long>::Node, std::allocator<HashTable<unsigned long>::Node> >::_M_put_node(std::_List_node<HashTable<unsigned long>::Node>*)+0x3f (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+	    556d275dba97 std::__cxx11::_List_base<HashTable<unsigned long>::Node, std::allocator<HashTable<unsigned long>::Node> >::_M_destroy_node(std::_List_node<HashTable<unsigned long>::Node>*)+0x4d (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+	    556d275db3e9 std::__cxx11::list<HashTable<unsigned long>::Node, std::allocator<HashTable<unsigned long>::Node> >::_M_erase(std::_List_iterator<HashTable<unsigned long>::Node>)+0x51 (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+	    556d275da903 std::__cxx11::list<HashTable<unsigned long>::Node, std::allocator<HashTable<unsigned long>::Node> >::erase(std::_List_const_iterator<HashTable<unsigned long>::Node>)+0x53 (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+	    556d275d9d31 HashTable<unsigned long>::remove(unsigned long)+0x9f (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+	    556d275d962b main+0x162 (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+	    7f5eba227635 [unknown] (/usr/lib/libc.so.6)
+	    7f5eba2276e9 __libc_start_main+0x89 (/usr/lib/libc.so.6)
+	    556d275d9125 _start+0x25 (/home/alex/ITMO/labs/advancedCpp/2025-highload-cpp-P4114-shelyagov-a-s/main)
+
